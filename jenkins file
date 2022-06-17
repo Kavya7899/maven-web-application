@@ -48,7 +48,7 @@ sendSlackNotification (currentbuild.result)
 }//node ending
 
 //slack notifications
-def sendSlackNotifications(Current buildStatus = 'STARTED') {
+def sendSlackNotifications(String buildStatus = 'STARTED') {
   
   buildStatus =  buildStatus ?: 'SUCCESS'
 
